@@ -1,0 +1,452 @@
+.navigation {
+    /* background-color: aqua; */
+    height: 8vh;
+    width: 100%;
+    border-radius: 30px;
+    position: fixed;
+    margin-top: -400px;
+
+    z-index: 1000;
+    font-family: "Orbitron", sans-serif;
+
+
+
+
+}
+
+
+
+
+.ol {
+    list-style: none;
+    columns: 0;
+
+    font-family: "Orbitron", sans-serif;
+    color: #0cbdd1;
+    
+    font-size: 17px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.button1,
+.button2,
+.button3,
+.button4 {
+    margin: 0;
+    height: auto;
+    background: transparent;
+
+    border: none;
+    cursor: pointer;
+    --border-right: 6px;
+    --text-stroke-color: rgba(205, 195, 195, 0.6);
+    --animation-color: #1dcbdef5;
+    --fs-size: 1.5em;
+    letter-spacing: 5px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    font-family: "Orbitron", sans-serif;
+}
+
+    /* hover text styling */
+    .hover-text1,
+    .hover2-text2,
+    .hover3-text3,
+    .hover4-text4 {
+        position: absolute;
+        box-sizing: border-box;
+        color: var(--animation-color);
+        width: 0%;
+        inset: -0;
+        border-right: var(--border-right) solid var(--animation-color);
+        overflow: hidden;
+        transition: 0.5s;
+        -webkit-text-stroke: 1px var(--animation-color);
+        font-family: "Orbitron", sans-serif;
+    }
+
+    /* hover effect */
+    .button1:hover .hover-text1,
+    .button2:hover .hover2-text2,
+    .button3:hover .hover3-text3,
+    .button4:hover .hover4-text4 {
+        width: 100%;
+        filter: drop-shadow(0 0 23px var(--animation-color));
+        font-family: "Orbitron", sans-serif;
+    }
+
+
+    .navigation ol li {
+        display: inline-block;
+
+        margin-right: 20px;
+
+        font-family: "Orbitron", sans-serif;
+    }
+
+    .slogan {
+        width: 100%;
+        position: relative;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-top: 400px;
+        font-family: "Orbitron", sans-serif;
+
+
+    }
+
+    .slogan span {
+        position: absolute;
+        color: #fff;
+        transform: translate(-50%, -50%);
+        font-size: 38px;
+        letter-spacing: 5px;
+    }
+
+    .slogan span:nth-child(1) {
+        color: transparent;
+        -webkit-text-stroke: 0.5px rgb(246, 251, 255);
+    }
+
+    .slogan span:nth-child(2) {
+        color: rgb(210, 216, 221);
+        -webkit-text-stroke: 1px rgb(255, 255, 255);
+        animation: uiverse723 3s ease-in-out infinite;
+    }
+
+
+
+    .body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        background-image: url(uwp3520884.jpeg);
+    }
+
+    @keyframes snow {
+        0% {
+            opacity: 0;
+            transform: translateY(0px);
+        }
+
+        20% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(650px);
+        }
+    }
+
+    .box-of-star1,
+    .box-of-star2,
+    .box-of-star3,
+    .box-of-star4 {
+        width: 100%;
+        position: absolute;
+        z-index: 10;
+        left: 0;
+        top: 0;
+        transform: translateY(0px);
+        height: 700px;
+    }
+
+    .box-of-star1 {
+        animation: snow 5s linear infinite;
+    }
+
+    .box-of-star2 {
+        animation: snow 5s -1.64s linear infinite;
+    }
+
+    .box-of-star3 {
+        animation: snow 5s -2.30s linear infinite;
+    }
+
+    .box-of-star4 {
+        animation: snow 5s -3.30s linear infinite;
+    }
+
+    .star {
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: #FFF;
+        position: absolute;
+        z-index: 10;
+        opacity: 0.7;
+    }
+
+    .star:before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #FFF;
+        position: absolute;
+        z-index: 10;
+        top: 80px;
+        left: 70px;
+        opacity: .7;
+    }
+
+    .star:after {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #FFF;
+        position: absolute;
+        z-index: 10;
+        top: 8px;
+        left: 170px;
+        opacity: .9;
+    }
+
+    .star-position1 {
+        top: 30px;
+        left: 20px;
+    }
+
+    .star-position2 {
+        top: 110px;
+        left: 250px;
+    }
+
+    .star-position3 {
+        top: 60px;
+        left: 570px;
+    }
+
+    .star-position4 {
+        top: 120px;
+        left: 900px;
+    }
+
+    .star-position5 {
+        top: 20px;
+        left: 1120px;
+    }
+
+    .star-position6 {
+        top: 90px;
+        left: 1280px;
+    }
+
+    .star-position7 {
+        top: 30px;
+        left: 1480px;
+    }
+
+    .card {
+        display: flex;
+        margin-top: 500px;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 0.75rem;
+        background-color: rgba(0, 0, 0, 0.429);
+        color: white;
+
+        width: 370px;
+        height: 500px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1),
+            0 2px 4px -2px rgba(0, 0, 0, .1);
+    }
+
+    .header {
+        position: relative;
+        background-clip: border-box;
+        margin-top: 1.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        border-radius: 0.75rem;
+        background-color: rgb(33 150 243);
+        box-shadow: 0 10px 15px -3px rgba(33, 150, 243, .4), 0 4px 6px -4px rgba(33, 150, 243, .4);
+        height: 200px;
+    }
+
+    .info {
+        border: none;
+        padding: 1.5rem;
+        text-align: center;
+        height: 500px;
+
+
+    }
+
+    .title {
+        color: white;
+        letter-spacing: 0;
+        line-height: 1.375;
+        font-weight: 600;
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .footer {
+
+
+        padding: 0.75rem;
+        border: 1px solid rgb(236 239 241);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.505);
+    }
+
+    .tag {
+        font-weight: 300;
+        font-size: .75rem;
+        display: block;
+    }
+
+    .action {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        border: none;
+        outline: none;
+        box-shadow: 0 4px 6px -1px rgba(33, 150, 243, .4), 0 2px 4px -2px rgba(33, 150, 243, .4);
+        color: white;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: .75rem;
+        padding: 0.75rem 1.5rem;
+        background-color: rgb(33 150 243);
+        border-radius: 0.5rem;
+        cursor: pointer;
+
+    }
+
+    .img1 {
+        width: 340px;
+        height: 200px;
+
+    }
+
+    .card2 {
+        display: flex;
+        margin-top: 500px;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 0.75rem;
+        background-color: rgba(0, 0, 0, 0.429);
+        color: white;
+
+        width: 370px;
+        height: 500px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1),
+            0 2px 4px -2px rgba(0, 0, 0, .1);
+        margin-top: -500px;
+        margin-left: 410px;
+    }
+
+    .card4 {
+        display: flex;
+        margin-top: 500px;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 0.75rem;
+        background-color: rgba(0, 0, 0, 0.429);
+        color: white;
+
+        width: 370px;
+        height: 500px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1),
+            0 2px 4px -2px rgba(0, 0, 0, .1);
+        margin-top: -500px;
+        margin-left: 820px;
+    }
+
+    .card5 {
+        display: flex;
+        margin-top: 500px;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 0.75rem;
+        background-color: rgba(0, 0, 0, 0.429);
+        color: white;
+
+        width: 370px;
+        height: 500px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1),
+            0 2px 4px -2px rgba(0, 0, 0, .1);
+
+        margin-top: -500px;
+        float: right;
+    }
+
+    .card6 {
+        display: flex;
+        margin-top: 200px;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 0.75rem;
+        background-color: rgba(0, 0, 0, 0.429);
+        color: white;
+
+        width: 370px;
+        height: 500px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1),
+            0 2px 4px -2px rgba(0, 0, 0, .1);
+    }
+
+    .card7 {
+        display: flex;
+        margin-top: -500px;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 0.75rem;
+        background-color: rgba(0, 0, 0, 0.429);
+        color: white;
+
+        width: 370px;
+        height: 500px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1),
+            0 2px 4px -2px rgba(0, 0, 0, .1);
+        margin-left: 410px;
+    }
+
+    .card8 {
+        display: flex;
+        margin-top: -500px;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 0.75rem;
+        background-color: rgba(0, 0, 0, 0.429);
+        color: white;
+
+        width: 370px;
+        height: 500px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1),
+            0 2px 4px -2px rgba(0, 0, 0, .1);
+        margin-left: 810px;
+    }
+
+    .card9 {
+        display: flex;
+        margin-top: -500px;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 0.75rem;
+        background-color: rgba(0, 0, 0, 0.429);
+        color: white;
+
+        width: 370px;
+        height: 500px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1),
+            0 2px 4px -2px rgba(0, 0, 0, .1);
+        float: right;
+    }

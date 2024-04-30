@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Space.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+
+
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .welcomeMsg {
+            animation: fadeIn 2s ease-out;
+        }
+
+        .body {
+            animation: fadeIn 2s ease-out;
+        }
+
+        .animate {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body class="body" id="bdy">
+    <div class="welcomeMsg">
+        <div class="title">Welcome Let's Enter to The Universe
+        </div>
+        <br>
+
+
+
+
+    </div>
+    <br>
+    <div class="companylogo">
+        <img src="Space.png" alt="space PVT LTD " class="logo">
+    </div>
+
+    <div class="home">
+        <div class="hometitle">
+            <h2>Journey Through the Cosmos <br>and <br>Discover Worlds Beyond Imagination!</h2>
+        </div>
+
+
+    </div>
+
+
+    <br>
+
+    </div>
+    <br><br>
+    <div class="buttonUniverse">
+        <a href="page.html" id="myLink">
+
+            <button class="shadow__btn" id="enterbtn">
+                Enter to the uiverse
+            </button>
+
+        </a>
+
+    </div>
+
+
+
+
+
+    <script>
+
+        window.onload = function () {
+
+            alert("Welcome! This page is not fully responsive. The recommended resolution is 1660*1050. Can't get the best experience with any other resolution");
+
+
+
+            var welcomeMsg = document.querySelector('.welcomeMsg');
+            welcomeMsg.classList.add('animate');
+            welcomeMsg.style.opacity = 1;
+            welcomeMsg.style.transform = 'translateY(0)';
+        };
+
+    </script>
+</body>
+
+</html>
